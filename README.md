@@ -47,7 +47,7 @@ Planned sponsor benefits include:
 - early access to new vendor-neutral integrations
 - priority triage for bounded compatibility requests
 
-The private sponsor kit has already been implemented and validated. It will be connected to the appropriate sponsorship tier after GitHub approves the profile and the repository is transferred to an organization for automatic access management.
+The private sponsor kit has already been implemented and transferred to the organization-owned private repository `TheBayoumi-Labs/embci-report-sponsor-kit`. After GitHub approves the Sponsors profile, that repository will be attached to the appropriate sponsorship tiers for automatic access management.
 
 See [SUPPORT.md](SUPPORT.md) for the planned tiers and boundaries.
 

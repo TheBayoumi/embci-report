@@ -6,6 +6,8 @@
 
 The GitHub Sponsors application is currently pending. The sponsor button may not lead to an active profile until GitHub approves and publishes the listing.
 
+The private integration kit has already been created and transferred to the organization-owned private repository `TheBayoumi-Labs/embci-report-sponsor-kit`. Access is not active yet. Once the Sponsors listing is approved, the repository will be attached to the eligible tiers so GitHub can manage sponsor access automatically.
+
 ## Planned monthly tiers
 
 ### Supporter — $5/month

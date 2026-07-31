@@ -20,7 +20,7 @@ The roadmap is directional rather than a delivery guarantee.
 - fictional integration examples
 - automated adapter validation
 
-These private assets will become a tier benefit after GitHub Sponsors approval and organization-based access setup.
+These private assets now reside in the organization-owned repository `TheBayoumi-Labs/embci-report-sponsor-kit`. They will become a tier benefit after GitHub Sponsors approval and tier-based repository access configuration.
 
 ## Next public work
 
