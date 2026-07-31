@@ -1,5 +1,7 @@
 # embci-report
 
+[![CI](https://github.com/TheBayoumi/embci-report/actions/workflows/ci.yml/badge.svg)](https://github.com/TheBayoumi/embci-report/actions/workflows/ci.yml)
+
 A small, vendor-neutral CLI that converts embedded-software test and coverage JSON into readable Markdown or HTML reports.
 
 ## Why it exists
