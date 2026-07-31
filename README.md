@@ -44,7 +44,9 @@ Paid fixed-scope services are available without waiting for GitHub Sponsors appr
 - generic adapters from $149
 - CI integration packs from $299
 
-See [SERVICES.md](SERVICES.md) for deliverables, boundaries, and the structured integration-request process.
+[Open the paid integration request](https://github.com/TheBayoumi/embci-report/issues/new?template=paid_integration_request.yml) using only public, fictional, or sanitized information. After the request is accepted, the fixed $49 assessment can be paid through [PayPal](https://paypal.me/TheBayoumi/49USD). Adapter and CI integration payments are requested only after written scope and pricing are agreed.
+
+See [SERVICES.md](SERVICES.md) for deliverables, payment terms, and boundaries.
 
 ## Support development
 
@@ -58,6 +60,8 @@ Planned sponsor benefits include:
 - priority triage for bounded compatibility requests
 
 The private sponsor kit has already been implemented and transferred to the organization-owned private repository `TheBayoumi-Labs/embci-report-sponsor-kit`. After GitHub approves the Sponsors profile, that repository will be attached to the appropriate sponsorship tiers for automatic access management.
+
+One-time support is available through [PayPal.Me](https://paypal.me/TheBayoumi).
 
 See [SUPPORT.md](SUPPORT.md) for the planned tiers and boundaries.
 
