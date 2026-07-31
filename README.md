@@ -4,6 +4,8 @@
 
 A small, vendor-neutral CLI that converts embedded-software test and coverage JSON into readable Markdown or HTML reports.
 
+[View the five-minute demo](docs/demo.md) · [See the verified generated report](examples/generated-report.md) · [Request a paid integration](https://github.com/TheBayoumi/embci-report/issues/new?template=paid_integration_request.yml)
+
 ## Why it exists
 
 Embedded CI pipelines often produce dense logs that are difficult to review in pull requests. `embci-report` creates a compact summary, groups failed tests, reports coverage, and can enforce coverage thresholds through exit codes.
