@@ -36,6 +36,16 @@ Exit codes:
 }
 ```
 
+## Need an integration now?
+
+Paid fixed-scope services are available without waiting for GitHub Sponsors approval:
+
+- $49 integration assessment
+- generic adapters from $149
+- CI integration packs from $299
+
+See [SERVICES.md](SERVICES.md) for deliverables, boundaries, and the structured integration-request process.
+
 ## Support development
 
 The public CLI remains useful without payment. A GitHub Sponsors application has been submitted, but the Sponsors listing and paid tiers are not public yet.

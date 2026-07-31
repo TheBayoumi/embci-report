@@ -1,0 +1,62 @@
+name: Paid integration request
+description: Request a fixed-scope adapter, assessment, or CI integration using sanitized information only.
+title: "[Integration] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use only public, fictional, or properly sanitized information. Do not post proprietary source code, credentials, customer data, licensed vendor exports, or employer-owned reports.
+  - type: dropdown
+    id: service
+    attributes:
+      label: Requested service
+      options:
+        - Integration assessment
+        - Generic adapter
+        - CI integration pack
+        - Other bounded request
+    validations:
+      required: true
+  - type: input
+    id: input_format
+    attributes:
+      label: Input format or tool
+      description: Name the public format or tool without uploading confidential artifacts.
+      placeholder: JUnit XML, LCOV, SARIF, custom documented JSON
+    validations:
+      required: true
+  - type: textarea
+    id: desired_output
+    attributes:
+      label: Desired result
+      description: Describe the report, policy check, or CI behavior you need.
+    validations:
+      required: true
+  - type: textarea
+    id: sanitized_example
+    attributes:
+      label: Sanitized example or public specification
+      description: Link to a public specification or provide a tiny fictional example.
+    validations:
+      required: true
+  - type: dropdown
+    id: budget
+    attributes:
+      label: Budget range
+      options:
+        - $49 assessment
+        - $149–$298
+        - $299–$599
+        - $600+
+        - Need scope first
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have not included confidential, proprietary, employer-owned, customer, or credential data.
+          required: true
+        - label: I understand that scope, acceptance criteria, and price must be agreed before implementation.
+          required: true
