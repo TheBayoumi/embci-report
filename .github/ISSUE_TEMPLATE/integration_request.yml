@@ -1,0 +1,60 @@
+name: Integration request
+description: Request support for a public, vendor-neutral test or coverage format.
+title: "[Integration]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach employer-owned, customer, confidential, or proprietary data. Use public specifications and fictional examples only.
+  - type: input
+    id: format
+    attributes:
+      label: Format or tool
+      description: Name the public format, standard, or tool export.
+    validations:
+      required: true
+  - type: input
+    id: specification
+    attributes:
+      label: Public specification
+      description: Link to public documentation for the format.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Fictional minimal example
+      description: Paste a small, independently created example with no confidential identifiers.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected embci-report JSON
+      description: Show the desired normalized output.
+      render: json
+    validations:
+      required: true
+  - type: dropdown
+    id: ci
+    attributes:
+      label: Intended CI environment
+      options:
+        - GitHub Actions
+        - GitLab CI
+        - Jenkins
+        - Azure Pipelines
+        - Local CLI
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confidentiality confirmation
+      options:
+        - label: I confirm that the supplied example is fictional, public, or properly sanitized and that I have permission to share it.
+          required: true

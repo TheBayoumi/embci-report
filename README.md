@@ -36,24 +36,32 @@ Exit codes:
 }
 ```
 
-## Monetization structure
+## Support development
 
-The public repository should remain useful on its own. Sponsor-only material belongs in a separate private organization repository and may include:
+The public CLI remains useful without payment. A GitHub Sponsors application has been submitted, but the Sponsors listing and paid tiers are not public yet.
 
-- CI templates for common embedded workflows
-- report-adapter examples for exported vendor-neutral JSON/XML
-- management dashboards and trend reports
-- priority compatibility requests
+Planned sponsor benefits include:
 
-Do not upload employer-owned test data, proprietary report formats, or confidential source code.
+- reusable GitHub Actions and GitLab CI templates
+- generic JUnit XML and CSV adapters
+- early access to new vendor-neutral integrations
+- priority triage for bounded compatibility requests
+
+The private sponsor kit has already been implemented and validated. It will be connected to the appropriate sponsorship tier after GitHub approves the profile and the repository is transferred to an organization for automatic access management.
+
+See [SUPPORT.md](SUPPORT.md) for the planned tiers and boundaries.
+
+## Safety and confidentiality
+
+Do not upload employer-owned test data, proprietary report formats, confidential source code, customer information, or restricted tool exports. Reproduction cases must be fictional, sanitized, or independently created.
 
 ## Roadmap
 
-- JUnit XML adapter
-- SARIF output for GitHub code scanning annotations
-- historical trend charts
-- generic CSV adapter
-- sponsor-only pipeline templates
+See [ROADMAP.md](ROADMAP.md).
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). Integration requests can be submitted through the repository issue template using sanitized examples only.
 
 ## License
 
