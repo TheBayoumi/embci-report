@@ -1,0 +1,14 @@
+{
+  "suite": "embedded-controller-demo",
+  "tests": [
+    {"name": "Nominal startup", "status": "passed", "duration_s": 0.12},
+    {"name": "Communication recovery", "status": "passed", "duration_s": 0.19},
+    {"name": "Optional diagnostic mode", "status": "skipped", "duration_s": 0.0}
+  ],
+  "coverage": {
+    "statement": {"covered": 92, "total": 100},
+    "function": {"covered": 18, "total": 20},
+    "mcdc_condition": {"covered": 41, "total": 50},
+    "mcdc_pair": {"covered": 24, "total": 30}
+  }
+}

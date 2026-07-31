@@ -1,0 +1,29 @@
+name: Weekly product health
+on:
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e . pytest
+      - run: pytest
+      - name: Generate weekly report
+        run: |
+          python scripts/weekly_health.py > weekly-health.md
+          cat weekly-health.md
+      - name: Open issue when attention is needed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if grep -q "ATTENTION_REQUIRED" weekly-health.md; then
+            gh issue create --title "Automated weekly product-health review" --body-file weekly-health.md
+          fi

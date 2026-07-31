@@ -1,0 +1,26 @@
+name: Monthly content draft
+on:
+  schedule:
+    - cron: "23 6 1 * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create a factual release-post draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BODY=$(cat <<'TEXT'
+          ## Draft technical post
+
+          I am building `embci-report`, a vendor-neutral tool that turns embedded test and coverage results into concise Markdown and HTML reports.
+
+          This month's post should describe one completed feature from the repository history. Replace this placeholder with verified release notes before publishing. Never claim compatibility that is not covered by tests.
+          TEXT
+          )
+          gh issue create --title "Monthly product-content draft" --body "$BODY"
